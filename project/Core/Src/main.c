@@ -104,14 +104,17 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		if(HAL_GPIO_ReadPin(COLUMN1_GPIO_Port, COLUMN1_Pin) == 0){
 			key_pressed = '1';
 			break;
+		}
 		HAL_GPIO_WritePin(ROW2_GPIO_Port, ROW2_Pin, GPIO_PIN_RESET);
 		if(HAL_GPIO_ReadPin(COLUMN1_GPIO_Port, COLUMN1_Pin) == 0){
 					key_pressed = '4';
 					break;
+		}
 		HAL_GPIO_WritePin(ROW3_GPIO_Port, ROW3_Pin, GPIO_PIN_RESET);
 		if(HAL_GPIO_ReadPin(COLUMN1_GPIO_Port, COLUMN1_Pin) == 0){
 					key_pressed = '7';
 					break;
+		}
 		HAL_GPIO_WritePin(ROW4_GPIO_Port, ROW4_Pin, GPIO_PIN_RESET);
 		if(HAL_GPIO_ReadPin(COLUMN1_GPIO_Port, COLUMN1_Pin) == 0){
 					key_pressed = '*';
@@ -122,14 +125,17 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 			if(HAL_GPIO_ReadPin(COLUMN2_GPIO_Port, COLUMN2_Pin) == 0){
 				key_pressed = '1';
 				break;
+			}
 			HAL_GPIO_WritePin(ROW2_GPIO_Port, ROW2_Pin, GPIO_PIN_RESET);
 			if(HAL_GPIO_ReadPin(COLUMN2_GPIO_Port, COLUMN2_Pin) == 0){
 						key_pressed = '4';
 						break;
+			}
 			HAL_GPIO_WritePin(ROW3_GPIO_Port, ROW3_Pin, GPIO_PIN_RESET);
 			if(HAL_GPIO_ReadPin(COLUMN2_GPIO_Port, COLUMN2_Pin) == 0){
 						key_pressed = '7';
 						break;
+			}
 			HAL_GPIO_WritePin(ROW4_GPIO_Port, ROW4_Pin, GPIO_PIN_RESET);
 			if(HAL_GPIO_ReadPin(COLUMN2_GPIO_Port, COLUMN2_Pin) == 0){
 						key_pressed = '*';
@@ -140,14 +146,17 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 			if(HAL_GPIO_ReadPin(COLUMN3_GPIO_Port, COLUMN3_Pin) == 0){
 				key_pressed = '1';
 				break;
+			}
 			HAL_GPIO_WritePin(ROW2_GPIO_Port, ROW2_Pin, GPIO_PIN_RESET);
 			if(HAL_GPIO_ReadPin(COLUMN3_GPIO_Port, COLUMN3_Pin) == 0){
 						key_pressed = '4';
 						break;
+			}
 			HAL_GPIO_WritePin(ROW3_GPIO_Port, ROW3_Pin, GPIO_PIN_RESET);
 			if(HAL_GPIO_ReadPin(COLUMN1_GPIO_Port, COLUMN1_Pin) == 0){
 						key_pressed = '7';
 						break;
+			}
 			HAL_GPIO_WritePin(ROW4_GPIO_Port, ROW4_Pin, GPIO_PIN_RESET);
 			if(HAL_GPIO_ReadPin(COLUMN3_GPIO_Port, COLUMN3_Pin) == 0){
 						key_pressed = '*';
@@ -158,20 +167,23 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 			if(HAL_GPIO_ReadPin(COLUMN4_GPIO_Port, COLUMN4_Pin) == 0){
 				key_pressed = '1';
 				break;
+			}
 			HAL_GPIO_WritePin(ROW2_GPIO_Port, ROW2_Pin, GPIO_PIN_RESET);
 			if(HAL_GPIO_ReadPin(COLUMN4_GPIO_Port, COLUMN4_Pin) == 0){
 						key_pressed = '4';
 						break;
+			}
 			HAL_GPIO_WritePin(ROW3_GPIO_Port, ROW3_Pin, GPIO_PIN_RESET);
 			if(HAL_GPIO_ReadPin(COLUMN4_GPIO_Port, COLUMN4_Pin) == 0){
 						key_pressed = '7';
 						break;
+			}
 			HAL_GPIO_WritePin(ROW4_GPIO_Port, ROW4_Pin, GPIO_PIN_RESET);
 			if(HAL_GPIO_ReadPin(COLUMN4_GPIO_Port, COLUMN4_Pin) == 0){
 						key_pressed = '*';
 						break;
-			}
 
+			}
 	default:
 		break;
 	}
